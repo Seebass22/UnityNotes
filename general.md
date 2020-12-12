@@ -1,10 +1,14 @@
 # print debug messages
 ## format with string concatenation
+```csharp
 Debug.Log("current speed:" + speed + " rotation:" + rot)
+```
 
 # show variable in inspector without making it public
+```csharp
 [SerializeField]
 float accelerationPower;
+```
 
 # important
 update physics in FixedUpdate()
