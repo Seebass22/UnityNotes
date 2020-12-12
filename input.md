@@ -7,7 +7,7 @@ Input.GetAxis("Mouse X")
 ```csharp
 Input.GetAxis("Horizontal")
 ```
-you can define you own axis' in the InputManager
+- you can define you own axis' in the InputManager
 
 ## set keybinds in inspector
 ```csharp

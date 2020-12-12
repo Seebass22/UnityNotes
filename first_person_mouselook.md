@@ -1,15 +1,13 @@
 ## object hierarchy
 	-PlayerAndCamera
-		-Main Camera ## has CameraController script
+		-Main Camera # has CameraController script
 			-Child Camera
 		-Player
 
 ## camera controller
-controls horizontal direction of player
-
-controls vertical direction of camera
-
-sets horizontal direction of camera to player horizontal direction
+- controls horizontal direction of player
+- controls vertical direction of camera
+- sets horizontal direction of camera to player horizontal direction
 
 ## lock and hide mouse (in Start())
 ```csharp

@@ -11,6 +11,5 @@ float accelerationPower;
 ```
 
 ## important
-update physics in FixedUpdate()
-
-get input in Update()
+- update physics in FixedUpdate()
+- get input in Update()

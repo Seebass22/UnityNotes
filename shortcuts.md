@@ -1,11 +1,12 @@
 ## camera
-middle mouse - pan
-
-shift middle mouse - pan quicker
-
-alt left click - orbit around center
-
-f - center around selected object
+key | function
+----|---------
+middle mouse | pan
+shift middle mouse | pan quicker
+alt left click | orbit around center
+f | center around selected object
 
 ## views
-shift space - fullscreen view
+key | function
+----|---------
+shift space | fullscreen view
