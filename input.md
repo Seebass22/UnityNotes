@@ -1,20 +1,20 @@
-# get mouse position
+## get mouse position
 ```csharp
 Input.GetAxis("Mouse X")
 ```
 
-# get axis direction
+## get axis direction
 ```csharp
 Input.GetAxis("Horizontal")
 ```
-## you can define you own axis' in the InputManager
+you can define you own axis' in the InputManager
 
-# set keybinds in inspector
+## set keybinds in inspector
 ```csharp
 public KeyCode boost;
 ```
 
-# check if key held down
+## check if key held down
 ```csharp
 Input.GetKeyDown()
 ```

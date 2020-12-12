@@ -1,29 +1,31 @@
-# object hierarchy
--PlayerAndCamera
-	-Main Camera # has CameraController script
-		-Child Camera
-	-Player
+## object hierarchy
+	-PlayerAndCamera
+		-Main Camera ## has CameraController script
+			-Child Camera
+		-Player
 
-# camera controller
+## camera controller
 controls horizontal direction of player
+
 controls vertical direction of camera
+
 sets horizontal direction of camera to player horizontal direction
 
-# lock and hide mouse (in Start())
+## lock and hide mouse (in Start())
 ```csharp
 Cursor.visible = false;
 Cursor.lockState = CursorLockMode.Locked;
 ```
 
-# example script
-## members
+## example script
+members
 ```csharp
 public float mouseSensitivity;
 public Transform playerTransform;
 public Transform childTransform;
 ```
 
-## in Update()
+in Update()
 ```csharp
 float horizontal_axis = Input.GetAxis("Mouse X") * mouseSensitivity;
 float vertical_axis = Input.GetAxis("Mouse Y") * mouseSensitivity;
