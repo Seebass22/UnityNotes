@@ -9,7 +9,15 @@ Debug.Log("current speed:" + speed + " rotation:" + rot)
 [SerializeField]
 float accelerationPower;
 ```
+constrain values and add slider
+```csharp
+[SerializeField, Range(10, 100)]
+float accelerationPower;
+```
 
 ## important
 - update physics in FixedUpdate()
 - get input in Update()
+
+## manage packages
+Windows / Package Manager

@@ -10,3 +10,8 @@ f | center around selected object
 key | function
 ----|---------
 shift space | fullscreen view
+
+## other
+key | function
+----|---------
+qwerty| select tool
