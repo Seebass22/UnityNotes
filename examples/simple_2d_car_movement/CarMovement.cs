@@ -13,7 +13,6 @@ public class CarMovement : MonoBehaviour
     [SerializeField]
     float steeringPower = 5f;
 
-    float timeStamp;
     float steeringAmount, speed, direction;
 
     void Start()
@@ -21,7 +20,6 @@ public class CarMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.drag = 5;
         rb.angularDrag = 5;
-        Spawn();
     }
 
     void FixedUpdate()
