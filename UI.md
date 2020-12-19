@@ -2,7 +2,7 @@
 - create canvas: UI / Canvas
 - in Canvas:
 	- set UI scale mode to "Scale With Screen Size"
-	- set reference resolution to match aspect ration (e.g. 1600x900)
+	- set reference resolution to match aspect ratio (e.g. 1600x900)
 - create text: UI / Text
 - in Text:
 	- set anchor 
