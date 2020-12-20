@@ -37,3 +37,31 @@ enum FunctionName { Wave, Multiwave, Ripple }
 [SerializeField]
 FunctionName function = default;
 ```
+
+## lists
+- ordered
+- dynamic size
+
+create a list of Items
+```csharp
+List<Item> items = new List<Item>();
+```
+
+find Item with id 5
+```csharp
+items.Find(item => item.id == 5)
+```
+
+find index where item is null
+```csharp
+uIItems.Find(item => item.id == null)
+```
+
+## dictionaries
+- key, value pairs
+```csharp
+dictionary dict = new dictionary<string, int>{
+	{"damage", 5},
+	{"defense", 4}
+};
+```
