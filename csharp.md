@@ -27,6 +27,23 @@ del f = GetFunction(0);
 float x = f(2f, 0f);
 ```
 
+## lambdas
+expression lambdas
+
+	(args) => expression
+```csharp
+int[] numbers = { 2, 3, 4, 5 };
+var squaredNumbers = numbers.Select(x => x * x);
+```
+statement lambdas
+
+	(args) => { <sequence-of-statements> }
+```csharp
+GetComponent<Button>().onClick.AddListener(() => {
+	Debug.Log("clicked!");
+});
+```
+
 ## enumerations
 ```csharp
 // no semicolon!
