@@ -7,14 +7,30 @@ is equivalent to
 ```csharp
 if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
 ```
+
 ## use all constants and static members from library
 ```csharp
 using static UnityEngine.Mathf;
 //...
 float ans = Sin(2 * PI * t);
 ```
+
+## pass variable by reference
+ref keyword
+```csharp
+public void Increment(ref int i){
+	i++;
+}
+
+int i = 5;
+Increment(ref i);
+```
+
 ## creating a function library
 - write a static class that does not inheirit from MonoBehaviour
+
+## other tips
+- structs are value types, while classes are reference types
 
 # GENERAL LANGUAGE FEATURES
 ## delegates
