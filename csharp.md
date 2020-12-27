@@ -171,6 +171,22 @@ public class Example<T> where T : IEnemy {
 }
 ```
 
+## extension methods
+to extend a class, write a method:
+- that is static
+- who's first parameter has the 'this' keyword and is the class being extended
+```csharp
+// class to contain extension methods
+public static class ExtensionMethods{
+	public static void ResetTransform(this Transform trans){
+		trans.position = Vector3.zero;
+	}
+}
+
+// use extension method
+transform.ResetTransform()
+```
+
 # DATA STRUCTURES
 ## lists
 - ordered
@@ -189,6 +205,29 @@ items.Find(item => item.id == 5)
 find index where item is null
 ```csharp
 uIItems.Find(item => item.id == null)
+```
+
+### make list sortable
+implement IComparable interface
+```csharp
+public class BadGuy : IComparable<BadGuy>{
+	public string name;
+	public int power;
+
+	public BadGuy(string newName, int newPower){
+		name = newName;
+		power = newPower;
+	}
+
+	// return > 0, 0, < 0 if instance is
+	// greater than, equal to or less than zero
+	public int CompareTo(BadGuy other){
+		if (other == null)
+			return 1;
+		return power - other.power
+	}
+}
+
 ```
 
 ## dictionaries
