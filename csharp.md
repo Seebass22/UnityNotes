@@ -112,6 +112,37 @@ public class Bullet : MonoBehaviour {
 }
 ```
 
+## generics
+can be used as
+- parameter
+- return value
+- property
+```csharp
+// one generic parameter
+public T[] CreateArray<T>(T arg1, T arg2){
+	return new T[] { arg1, arg2 };
+}
+
+// multiple generic parameters
+public void MultiGenerics<T1, T2>(T1 t1, T2 t2){
+	Debug.Log(t1.GetType());
+	Debug.Log(t2.GetType());
+}
+
+CreateArray<int>(5, 6);
+MultiGenerics<int, string>(5, "asdf");
+
+// generics in class
+// constaint: T must implement interface IEnemy
+public class Example<T> where T : IEnemy {
+	// use T in place of type anywhere in class
+	public T value;
+	public Example(T val){
+		val.Damage();
+	}
+}
+```
+
 # DATA STRUCTURES
 ## lists
 - ordered
