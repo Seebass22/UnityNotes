@@ -267,5 +267,28 @@ public static class Utilities{
 int x = Utilities.Add(2, 4);
 ```
 
+## actions
+```csharp
+public delegate void OnDamageReceived(int currentHealth);
+public static event OnDamageReceived onDamage;
+```
+is equivalent to
+```csharp
+using System;
+
+public static Action<int> onDamage;
+```
+
+## func
+```csharp
+public delegate int CharacterLength(string text);
+```
+is equivalent to
+```csharp
+using System;
+
+public Func<string, int> CharacterLength;
+```
+
 ## other tips
 - structs are value types, while classes are reference types
