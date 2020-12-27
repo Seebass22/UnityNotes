@@ -1,3 +1,11 @@
+## null conditional operator
+```csharp
+OnSpacePressed?.Invoke(this, EventArgs.Empty);
+```
+is equivalent to
+```csharp
+if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
+```
 ## use all constants and static members from library
 ```csharp
 using static UnityEngine.Mathf;
