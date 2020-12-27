@@ -80,6 +80,37 @@ del f = GetFunction(0);
 float x = f(2f, 0f);
 ```
 
+## events
+```csharp
+public class Example : MonoBehaviour{
+	public delegate void scoreGoal();
+	public static event scoreGoal OnGoalScore;
+
+	private void OnTriggerEnter2D(Collider2D other){
+		// invoke event
+		if (OnGoalScore != null) OnGoalScore();
+	}
+}
+```
+listener
+```csharp
+public class ListenerExample : MonoBehaviour{
+	private void ResetObjetcts(){
+		// do stuff
+	}
+
+	void OnEnable(){
+		// register listener
+		Example.OnGoalScore += ResetObjetcts;
+	}
+
+	private void OnDisable(){
+		// de-register listener
+		Example.OnGoalScore -= ResetObjetcts;
+	}
+}
+```
+
 ## lambdas
 expression lambdas
 
