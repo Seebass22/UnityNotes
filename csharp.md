@@ -85,7 +85,8 @@ FunctionName function = default;
 - an interface contains definitions for functions that a class must implement
 - a class that implements an interface must implement all it's members
 - a class can implement multiple interfaces
-bullet damage example
+
+### bullet damage example
 
 in interface script (not in a class):
 ```csharp
