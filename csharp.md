@@ -28,11 +28,38 @@ Increment(ref i);
 
 ## creating a function library
 - write a static class that does not inheirit from MonoBehaviour
+```csharp
+public static class Utilities{
+	public static int Add(int a, int b){
+		return a + b;
+	}
+}
+
+// elsewhere
+int x = Utilities.Add(2, 4);
+```
 
 ## other tips
 - structs are value types, while classes are reference types
 
 # GENERAL LANGUAGE FEATURES
+## statics
+- static members (functions or fields) belong to the class, instead of an instance
+- static classes are classes that cannot be instantiated. they contain static functions only
+```csharp
+public class Enemy{
+	public static int enemyCount = 0;
+	public Enemy(){
+		enemyCount++;
+	}
+}
+
+// elsewhere
+Enemy enemy1 = new Enemy();
+Enemy enemy2 = new Enemy();
+Debug.Log(Enemy.enemyCount);
+```
+
 ## delegates
 - a type that represents references to methods (with specific args and return types)
 - similar to C++ function pointers
