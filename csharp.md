@@ -1,47 +1,3 @@
-# MISC
-## null conditional operator
-```csharp
-OnSpacePressed?.Invoke(this, EventArgs.Empty);
-```
-is equivalent to
-```csharp
-if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
-```
-
-## use all constants and static members from library
-```csharp
-using static UnityEngine.Mathf;
-//...
-float ans = Sin(2 * PI * t);
-```
-
-## pass variable by reference
-ref keyword
-```csharp
-public void Increment(ref int i){
-	i++;
-}
-
-int i = 5;
-Increment(ref i);
-```
-
-## creating a function library
-- write a static class that does not inheirit from MonoBehaviour
-```csharp
-public static class Utilities{
-	public static int Add(int a, int b){
-		return a + b;
-	}
-}
-
-// elsewhere
-int x = Utilities.Add(2, 4);
-```
-
-## other tips
-- structs are value types, while classes are reference types
-
 # GENERAL LANGUAGE FEATURES
 ## statics
 - static members (functions or fields) belong to the class, instead of an instance
@@ -269,3 +225,47 @@ dictionary dict = new dictionary<string, int>{
 	{"defense", 4}
 };
 ```
+
+# MISC
+## null conditional operator
+```csharp
+OnSpacePressed?.Invoke(this, EventArgs.Empty);
+```
+is equivalent to
+```csharp
+if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
+```
+
+## use all constants and static members from library
+```csharp
+using static UnityEngine.Mathf;
+//...
+float ans = Sin(2 * PI * t);
+```
+
+## pass variable by reference
+ref keyword
+```csharp
+public void Increment(ref int i){
+	i++;
+}
+
+int i = 5;
+Increment(ref i);
+```
+
+## creating a function library
+- write a static class that does not inheirit from MonoBehaviour
+```csharp
+public static class Utilities{
+	public static int Add(int a, int b){
+		return a + b;
+	}
+}
+
+// elsewhere
+int x = Utilities.Add(2, 4);
+```
+
+## other tips
+- structs are value types, while classes are reference types
