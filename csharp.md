@@ -1,3 +1,4 @@
+# MISC
 ## null conditional operator
 ```csharp
 OnSpacePressed?.Invoke(this, EventArgs.Empty);
@@ -15,6 +16,7 @@ float ans = Sin(2 * PI * t);
 ## creating a function library
 - write a static class that does not inheirit from MonoBehaviour
 
+# GENERAL LANGUAGE FEATURES
 ## delegates
 - a type that represents references to methods (with specific args and return types)
 - similar to C++ function pointers
@@ -63,6 +65,38 @@ enum FunctionName { Wave, Multiwave, Ripple }
 FunctionName function = default;
 ```
 
+## interfaces
+- an interface contains definitions for functions that a class must implement
+- a class that implements an interface must implement all it's members
+- a class can implement multiple interfaces
+bullet damage example
+
+in interface script (not in a class):
+```csharp
+public interface IDamageable{
+	void Damage();
+}
+```
+in script of damageable object:
+```csharp
+public class Crate : MonoBehaviour, IDamageable {
+	public void Damage() {
+		// definition
+	}
+}
+```
+in bullet script:
+```csharp
+public class Bullet : MonoBehaviour {
+	public void OnTriggerEnter2D(Collider collider){
+		IDamageable damageable = collider.GetComponent<IDamageable>();
+		if (damageable != null)
+			damageable.Damage();
+	}
+}
+```
+
+# DATA STRUCTURES
 ## lists
 - ordered
 - dynamic size
