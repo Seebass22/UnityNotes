@@ -15,7 +15,10 @@ Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 ## get axis direction
 ```csharp
+// smoothed over frames
 Input.GetAxis("Horizontal")
+// no smoothing
+Input.GetAxisRaw("Horizontal")
 ```
 - you can define you own axis' in the InputManager
 

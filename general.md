@@ -4,6 +4,25 @@ format with string concatenation
 Debug.Log("current speed:" + speed + " rotation:" + rot)
 ```
 
+## ways to reference something from another script
+by gameobect name
+```csharp
+Player player;
+GameObject playerObject = GameObject.Find("Player")
+player = playerObject.GetComponent<Player>();
+```
+by tag
+```csharp
+Player player;
+GameObject playerObject = GameObject.FindGameObjectWithTag("Player")
+player = playerObject.GetComponent<Player>();
+```
+by type
+```csharp
+Player player;
+player = FindObjectOfType<Player>();
+```
+
 ## show variable in inspector without making it public
 ```csharp
 [SerializeField]
