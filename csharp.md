@@ -191,7 +191,7 @@ items.Find(item => item.id == 5)
 
 find index where item is null
 ```csharp
-uIItems.Find(item => item.id == null)
+uIItems.FindIndex(item => item.id == null)
 ```
 
 ### make list sortable
