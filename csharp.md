@@ -292,3 +292,4 @@ public Func<string, int> CharacterLength;
 
 ## other tips
 - structs are value types, while classes are reference types
+- to check if a float is 0, check if variable < float.Epsilon

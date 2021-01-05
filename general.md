@@ -45,4 +45,8 @@ float accelerationPower;
 - constant expressions like (1f /Mathf.PI) are calculated by the compiler, don't worry about those
 
 ## manage packages
-Windows / Package Manager
+- Windows / Package Manager
+
+## snap tool
+- edit / grid and snap settings
+- hold ctrl to snap objects while moving them

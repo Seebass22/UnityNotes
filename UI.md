@@ -1,3 +1,13 @@
+## general
+- elements at the bottom are rendered last and appear at the top
+
+## anchors
+- shift alt click to anchor to corner
+
+## background image
+- create a new canvas and on the Canvas component:
+	- set Render Mode to "World Space"
+
 ## update text with script
 - create canvas: UI / Canvas
 - in Canvas:
