@@ -1,7 +1,9 @@
 ## print debug messages
-format with string concatenation
+format with string concatenation or string interpolation
 ```csharp
-Debug.Log("current speed:" + speed + " rotation:" + rot)
+Debug.Log("current speed: " + speed + " rotation:" + rot);
+// or
+Debug.Log($"current speed: {speed} rotation: {rot}");
 ```
 
 ## show private members in inspector
