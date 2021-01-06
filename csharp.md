@@ -302,6 +302,18 @@ using System;
 public Func<string, int> CharacterLength;
 ```
 
+## string interpolation
+special character "$" identifies string as an interpolated string. Write expresssions in braces
+```csharp
+Debug.Log($"current score {score}");
+```
+does the same as
+```csharp
+Debug.Log("current score: " + score);
+// or
+Debug.Log("current score: {0}", score);
+```
+
 ## other tips
 - structs are value types, while classes are reference types
 - to check if a float is 0, check if variable < float.Epsilon
