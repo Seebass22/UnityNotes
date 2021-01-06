@@ -236,6 +236,17 @@ is equivalent to
 if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
 ```
 
+## null coalescing operator
+returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
+```csharp
+public Camera cam;
+void Awake(){
+    cam ?? Camera.main
+	// same as
+    cam = cam ? cam : Camera.main
+}
+```
+
 ## use all constants and static members from library
 ```csharp
 using static UnityEngine.Mathf;
