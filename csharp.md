@@ -227,7 +227,8 @@ dictionary dict = new dictionary<string, int>{
 ```
 
 # MISC
-## null conditional operator
+## null conditional operator: ?.
+applies member access only if operand is non-null
 ```csharp
 OnSpacePressed?.Invoke(this, EventArgs.Empty);
 ```
@@ -236,14 +237,14 @@ is equivalent to
 if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
 ```
 
-## null coalescing operator
+## null coalescing operator: ??
 returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
 ```csharp
 public Camera cam;
 void Awake(){
-    cam ?? Camera.main
+	cam ?? Camera.main
 	// same as
-    cam = cam ? cam : Camera.main
+	cam = cam ? cam : Camera.main
 }
 ```
 
