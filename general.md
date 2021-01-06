@@ -4,8 +4,12 @@ format with string concatenation
 Debug.Log("current speed:" + speed + " rotation:" + rot)
 ```
 
+## show private members in inspector
+- click 3 dots on top right of inspector
+	- click "Debug"
+
 ## ways to reference something from another script
-by gameobect name
+by gameobject name
 ```csharp
 Player player;
 GameObject playerObject = GameObject.Find("Player")
@@ -17,7 +21,7 @@ Player player;
 GameObject playerObject = GameObject.FindGameObjectWithTag("Player")
 player = playerObject.GetComponent<Player>();
 ```
-by type
+by type (very slow)
 ```csharp
 Player player;
 player = FindObjectOfType<Player>();
