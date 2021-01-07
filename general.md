@@ -8,6 +8,11 @@ Debug.Log("current speed:" + speed + " rotation:" + rot)
 - click 3 dots on top right of inspector
 	- click "Debug"
 
+## loop through all direct child transforms
+```csharp
+foreach (Transform child in transform)
+```
+
 ## ways to reference something from another script
 by gameobject name
 ```csharp
