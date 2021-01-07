@@ -227,13 +227,25 @@ dictionary dict = new dictionary<string, int>{
 ```
 
 # MISC
-## null conditional operator
+## null conditional operator: ?.
+applies member access only if operand is non-null
 ```csharp
 OnSpacePressed?.Invoke(this, EventArgs.Empty);
 ```
 is equivalent to
 ```csharp
 if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
+```
+
+## null coalescing operator: ??
+returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
+```csharp
+public Camera cam;
+void Awake(){
+	cam ?? Camera.main
+	// same as
+	cam = cam ? cam : Camera.main
+}
 ```
 
 ## use all constants and static members from library
@@ -288,6 +300,18 @@ is equivalent to
 using System;
 
 public Func<string, int> CharacterLength;
+```
+
+## string interpolation
+special character "$" identifies string as an interpolated string. Write expresssions in braces
+```csharp
+Debug.Log($"current score {score}");
+```
+does the same as
+```csharp
+Debug.Log("current score: " + score);
+// or
+Debug.Log("current score: {0}", score);
 ```
 
 ## other tips
