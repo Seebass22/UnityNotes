@@ -36,6 +36,11 @@ public class HealthDisplay : Monobehaviour {
 	- if project is not set to 2d:
 		- set Texture Type of image to "Sprite (2D and UI)"
 
+## add an image that will not block mouse clicks on objects below it
+- add component: Canvas Group
+- uncheck "Interactable"
+- uncheck "Blocks Raycasts"
+
 ## Buttons
 - create element: UI / Button - OR add button component to any other UI element
 - in a script: create a public function that will be called

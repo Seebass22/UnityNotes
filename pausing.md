@@ -1,0 +1,2 @@
+- set Time.timescale to 0f
+- reset to 1 to resume
