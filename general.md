@@ -5,6 +5,14 @@ Debug.Log("current speed: " + speed + " rotation:" + rot);
 // or
 Debug.Log($"current speed: {speed} rotation: {rot}");
 ```
+print warning
+```csharp
+Debug.LogWarning("something happened");
+```
+show object in hierarchy when warning clicked on that caused log to run
+```csharp
+Debug.LogWarning("something happened", this);
+```
 
 ## show private members in inspector
 - click 3 dots on top right of inspector
