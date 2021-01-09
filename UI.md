@@ -1,8 +1,13 @@
 ## general
 - elements at the bottom are rendered last and appear at the top
 
+## position child objects with equal spacing
+- add component: "vertical layout group" or "horizontal layout group"
+- set desired spacing, padding, etc
+- the children will remain at their positions even if the layout group component is removed
+
 ## anchors
-- shift alt click to anchor to corner
+- shift alt click to set anchor pivot and position
 
 ## background image
 - create a new canvas and on the Canvas component:
