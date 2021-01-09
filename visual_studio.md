@@ -1,3 +1,9 @@
+## rename variable
+F2
+
+## go to method, file or variable
+CTRL + ,
+
 ## extract method
 - Highlight lines to extract and
 - Click "quick actions and refactorings"
