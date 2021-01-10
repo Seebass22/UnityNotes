@@ -13,6 +13,11 @@ or
 - CTRL + .
 - Enter
 
+## generate method
+- while on method call of non-existent method:
+- CTRL + .
+- Enter
+
 ## folds
 - vsvim: use vim keybinds
 - otherwise: Ctrl + M + M
