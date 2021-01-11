@@ -5,6 +5,7 @@
 	- create audio source or attach clip to existing source
 - AudioMixer
 
+## play sound at position
 ```csharp
 AudioSource.PlayClipAtPoint(Audioclip clip, Vector3 position, float volume=1f)
 ```

@@ -280,6 +280,7 @@ int x = Utilities.Add(2, 4);
 ```
 
 ## actions
+can have any number of parameters but no return type
 ```csharp
 public delegate void OnDamageReceived(int currentHealth);
 public static event OnDamageReceived onDamage;

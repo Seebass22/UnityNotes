@@ -55,6 +55,12 @@ float accelerationPower;
 ## align camera with scene view
 - with camera selected: GameObject / Align with View
 
+## destroy object after x time
+```csharp
+float x = 5;
+Destroy(gameObject, x);
+```
+
 ## important
 - update physics in FixedUpdate()
 - get input in Update()
