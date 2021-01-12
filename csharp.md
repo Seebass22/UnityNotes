@@ -194,7 +194,7 @@ public int Health{
 ```
 
 # DATA STRUCTURES
-https://docs.microsoft.com/en-us/dotnet/standard/collections/#choose-a-collection
+[.NET docs - choose a collection](https://docs.microsoft.com/en-us/dotnet/standard/collections/#choose-a-collection)
 
 ## lists
 - ordered
@@ -249,6 +249,8 @@ dictionary dict = new dictionary<string, int>{
 
 # MISC
 ## null conditional operator: ?.
+[Microsoft C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)
+
 applies member access only if operand is non-null
 ```csharp
 OnSpacePressed?.Invoke(this, EventArgs.Empty);
@@ -259,6 +261,8 @@ if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
 ```
 
 ## null coalescing operators: ?? and ??=
+[Microsoft C# reference](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator)
+
 - ?? returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
 - ??= assigns the value of right-hand operand to left-hand operand if left is null
 ```csharp
@@ -306,6 +310,8 @@ int x = Utilities.Add(2, 4);
 ```
 
 ## actions
+[.NET docs](https://docs.microsoft.com/en-us/dotnet/api/system.action)
+
 can have any number of parameters but no return type
 ```csharp
 public delegate void OnDamageReceived(int currentHealth);
