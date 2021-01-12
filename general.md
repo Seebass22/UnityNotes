@@ -24,6 +24,17 @@ private void OnValidate() => _health = Mathf.Clamp(_health, 0, MaxHealth)
 - click 3 dots on top right of inspector
 	- click "Debug"
 
+## show header above fields in inspector
+```csharp
+[Header("Health Settings")]
+public int _health = 0
+public int _maxHealth = 0
+
+[Header("Damage Settingsa")]
+public int _damage = 1;
+public int _maxDamage = 10;
+```
+
 ## make function callable from inspector context menu 
 ```csharp
 [ContextMenu("ClickMe!")]

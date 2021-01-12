@@ -194,6 +194,8 @@ public int Health{
 ```
 
 # DATA STRUCTURES
+https://docs.microsoft.com/en-us/dotnet/standard/collections/#choose-a-collection
+
 ## lists
 - ordered
 - dynamic size
