@@ -24,6 +24,14 @@ private void OnValidate() => _health = Mathf.Clamp(_health, 0, MaxHealth)
 - click 3 dots on top right of inspector
 	- click "Debug"
 
+## make function callable from inspector context menu 
+```csharp
+[ContextMenu("ClickMe!")]
+void DoSomething(){
+	Debug.Log("DoSomething() called");
+}
+```
+
 ## loop through all direct child transforms
 ```csharp
 foreach (Transform child in transform)
