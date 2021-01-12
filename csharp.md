@@ -69,6 +69,7 @@ public class ListenerExample : MonoBehaviour{
 
 ## lambdas
 expression lambdas
+- body is expression (no statements)
 
 	(args) => expression
 ```csharp
@@ -76,6 +77,7 @@ int[] numbers = { 2, 3, 4, 5 };
 var squaredNumbers = numbers.Select(x => x * x);
 ```
 statement lambdas
+- allows multiple statements in body
 
 	(args) => { <sequence-of-statements> }
 ```csharp
@@ -174,6 +176,23 @@ public static class ExtensionMethods{
 transform.ResetTransform()
 ```
 
+## properties
+- C# way of writing getters and setters (both called accessors in C#)
+- the value keyword defines the value being assigned by the set accessor
+
+with backing field
+```csharp
+// private backing field
+int _health = 100;
+
+// property with accessors (allows validation)
+// value is the incoming value
+public int Health{
+	get => _health;
+	set => _health = Mathf.Clamp(value, 0, MaxHealth);
+}
+```
+
 # DATA STRUCTURES
 ## lists
 - ordered
@@ -237,12 +256,17 @@ is equivalent to
 if (OnSpacePressed != null) OnSpacePressed(this, EventArgs.Empty);
 ```
 
-## null coalescing operator: ??
-returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
+## null coalescing operators: ?? and ??=
+- ?? returns value of left-hand operand if it isn't null. otherwise evaluate and return result of right-hand operator
+- ??= assigns the value of right-hand operand to left-hand operand if left is null
 ```csharp
 public Camera cam;
 void Awake(){
-	cam ?? Camera.main
+	cam = cam ?? Camera.main
+	// same as
+	cam ??= Camera.main
+	// same as
+	cam
 	// same as
 	cam = cam ? cam : Camera.main
 }

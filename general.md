@@ -14,6 +14,12 @@ show object in hierarchy when warning clicked on that caused log to run
 Debug.LogWarning("something happened", this);
 ```
 
+## validate variables when changed from inspector
+use OnValidate() function
+```csharp
+private void OnValidate() => _health = Mathf.Clamp(_health, 0, MaxHealth)
+```
+
 ## show private members in inspector
 - click 3 dots on top right of inspector
 	- click "Debug"
