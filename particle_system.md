@@ -5,6 +5,8 @@
 	- looping
 	- start speed
 	- play on awake
+	- Simulation space
+		- local for footstep particles
 
 - set material
 
