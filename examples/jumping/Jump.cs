@@ -13,7 +13,7 @@ public class Jump : MonoBehaviour
 
 	// GetKeyDown is unreliable in FixedUpdate
 	void Update()
-	}
+	{
 		if (_shouldJump == false)
 			_shouldJump = Input.GetKeyDown(KeyCode.Space);
 	}
