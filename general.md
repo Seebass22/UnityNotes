@@ -77,6 +77,7 @@ constrain values and add slider
 [SerializeField, Range(10, 100)]
 float accelerationPower;
 ```
+
 ## align camera with scene view
 - with camera selected: GameObject / Align with View
 
@@ -86,9 +87,12 @@ float x = 5;
 Destroy(gameObject, x);
 ```
 
+## snap object to sides of other object in editor
+hold ctrl + shift while moving object
+
 ## important
 - update physics in FixedUpdate()
-- get input in Update()
+- get input for key-pressed (not key-held) in Update()
 
 ## misc
 - prefer division over multiplication in code (faster)
