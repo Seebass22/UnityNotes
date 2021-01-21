@@ -215,6 +215,10 @@ find index where item is null
 uIItems.FindIndex(item => item.id == null)
 ```
 
+add to end of list: `Add(<T>)`
+
+add multiple items of a collection: `AddRange(IEnumerable<T>)`
+
 ### make list sortable
 implement IComparable interface
 ```csharp

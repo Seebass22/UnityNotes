@@ -4,9 +4,12 @@
 	- duration
 	- looping
 	- start speed
-	- play on awake
 	- Simulation space
 		- local for footstep particles
+	- play on awake
+- Shape:
+	- Shape
+	- Angle
 
 - set material
 
