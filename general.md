@@ -14,6 +14,19 @@ show object in hierarchy when warning clicked on that caused log to run
 Debug.LogWarning("something happened", this);
 ```
 
+## draw debug ray
+```csharp
+Debug.DrawRay(transform.position, direction, Color.red);
+```
+
+## automatically add certain components when script is attacked to game object
+```csharp
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+public class Grid : MonoBehaviour {
+	public int xSize, ySize;
+}
+```
+
 ## validate variables when changed from inspector
 use OnValidate() function
 ```csharp
@@ -86,6 +99,9 @@ float accelerationPower;
 float x = 5;
 Destroy(gameObject, x);
 ```
+
+## point towards object
+transform.LookAt()
 
 ## snap object to sides of other object in editor
 hold ctrl + shift while moving object
