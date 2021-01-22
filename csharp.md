@@ -163,7 +163,7 @@ public class Example<T> where T : IEnemy {
 ## extension methods
 to extend a class, write a method:
 - that is static
-- who's first parameter has the 'this' keyword and is the class being extended
+- whose first parameter has the 'this' keyword and is the class being extended
 ```csharp
 // class to contain extension methods
 public static class ExtensionMethods{
@@ -179,6 +179,11 @@ transform.ResetTransform()
 ## properties
 - C# way of writing getters and setters (both called accessors in C#)
 - the value keyword defines the value being assigned by the set accessor
+
+public getter but private setter
+```csharp
+public int BlockValue { get; private set; }
+```
 
 with backing field
 ```csharp
