@@ -113,6 +113,7 @@ hold ctrl + shift while moving object
 ## misc
 - prefer division over multiplication in code (faster)
 - constant expressions like (1f /Mathf.PI) are calculated by the compiler, don't worry about those
+- use Vector3.sqrMagnitude instead of Vector3.magnitude to compare vector magnitudes with each other as this is faster
 
 ## manage packages
 - Windows / Package Manager
