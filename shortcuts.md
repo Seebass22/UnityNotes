@@ -11,7 +11,12 @@ key | function
 ----|---------
 shift space | fullscreen view
 
-## other
+## scene view
 key | function
 ----|---------
 qwerty| select tool
+
+## Hierarchy
+key | function
+----|---------
+arrow keys | cycle through things

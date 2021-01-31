@@ -109,6 +109,11 @@ Destroy(gameObject, x);
 ## point towards object
 transform.LookAt()
 
+## get screen width
+```csharp
+Screen.width
+```
+
 # MISC other
 - prefer division over multiplication in code (faster)
 - constant expressions like (1f /Mathf.PI) are calculated by the compiler, don't worry about those
@@ -117,7 +122,6 @@ transform.LookAt()
 ## important
 - update physics in FixedUpdate()
 - get input for key-pressed (not key-held) in Update()
-
 
 ## manage packages
 - Windows / Package Manager
