@@ -24,3 +24,7 @@ Remap node
 
 ## create property from node
 - right click / convert to property
+
+## create node group
+- select nodes
+- click "group selection"
