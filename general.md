@@ -132,6 +132,12 @@ Screen.width
 ## manage packages
 - Windows / Package Manager
 
+## project list view
+- drag size slider (bottom right) to minimum
+
+## show documentation for component
+- click question mark icon in inspector
+
 ## snap tool
 - edit / grid and snap settings
 - hold ctrl to snap objects while moving them
