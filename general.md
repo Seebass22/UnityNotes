@@ -20,7 +20,7 @@ Debug.LogWarning("something happened", this);
 Debug.DrawRay(transform.position, direction, Color.red);
 ```
 
-# unity C# properties
+# unity C# attributes
 ## show variable in inspector without making it public
 ```csharp
 [SerializeField]
@@ -67,6 +67,12 @@ public int _maxDamage = 10;
 void DoSomething(){
 	Debug.Log("DoSomething() called");
 }
+```
+
+## show tooltip for a field in inspector
+```csharp
+[Tooltip("time before next spawn")]
+public float itemDelay;
 ```
 
 # MISC C#
