@@ -6,3 +6,6 @@
 ## fragment shader
 - per pixel
 - calculates and outputs pixel color
+
+# shader pipeline
+mesh -> vert -> frag
