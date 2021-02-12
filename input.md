@@ -31,3 +31,12 @@ public KeyCode boost;
 ```csharp
 Input.GetKeyDown()
 ```
+
+## mouse events
+`OnMouseDown` is called when mouse pressed while over collider
+```csharp
+void OnMouseDown()
+{
+	Destroy(gameObject);
+}
+```

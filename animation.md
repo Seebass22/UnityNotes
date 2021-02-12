@@ -14,3 +14,6 @@ arrangement of animations and transitions (state machine)
 
 - assign animation controller on Animator component
 - with animator controller selected: drag animation into animator window
+
+## animation events
+- click event button (shield-shaped) to add
