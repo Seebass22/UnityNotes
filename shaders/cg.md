@@ -16,7 +16,9 @@ mul
 
 ## round to int
 `round` round to nearest
+
 `floor` round down
+
 `ceil` round up
 
 ## linear interpolation
