@@ -150,9 +150,6 @@ Screen.width
 - click 3 dots on top right of inspector
 	- click "Debug"
 
-## move scene view to object
-- double click in hierarchy
-
 ## snap object to sides of other object in editor
 - hold ctrl + shift while moving object
 
