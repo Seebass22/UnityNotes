@@ -15,5 +15,10 @@ arrangement of animations and transitions (state machine)
 - assign animation controller on Animator component
 - with animator controller selected: drag animation into animator window
 
+## stuff to know
+- an animator placed on a parent GameObject can animate all children
+- the animator can only see methods at the same level (not on children)
+- -> put scripts and animator at parent level
+
 ## animation events
 - click event button (shield-shaped) to add
