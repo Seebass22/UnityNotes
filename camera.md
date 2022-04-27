@@ -1,0 +1,3 @@
+- size
+	- half of height or
+	- distance from center to top

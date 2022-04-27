@@ -18,3 +18,5 @@ public static float Min(float a, float b);
 public static float Max(float a, float b); 
 ```
 
+## Rounding
+RoundToInt()
